@@ -15,6 +15,15 @@ public class controlador {
     public void changeFrequence() throws Exception {
         radio.setFrequence(radio.getFrequence());
     }
+    public String getFrequence(){
+        return radio.getFrequence();
+    }
+    public int getAMActualStation(){
+        return radio.getAMActualStation();
+    }
+    public double getFMActualStation(){
+        return radio.getFMActualStation();
+    }
 
     public void forward(){
         radio.Forward();
