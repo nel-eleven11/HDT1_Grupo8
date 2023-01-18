@@ -1,5 +1,11 @@
 package src;
-
+/*
+ * HDT 1 Algorigmos y estructura de datos
+ * Nelson García Bravatti
+ * Joaquín Puente
+ * Oscar Fuentes
+ * Intefaz radio
+ */
 
 /**
  * @author moises.alonso

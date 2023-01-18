@@ -1,5 +1,11 @@
 package src;
-
+/*
+ * HDT 1 Algorigmos y estructura de datos
+ * Nelson García Bravatti
+ * Joaquín Puente
+ * Oscar Fuentes
+ * Clase radio
+ */
 
 public class radio implements IRadio {
 
@@ -25,10 +31,19 @@ public class radio implements IRadio {
         on = false;
     }
 
+    
+    /** 
+     * @return boolean
+     */
     public boolean isOn(){
         return on;
     }
 
+    
+    /** 
+     * @param freq
+     * @throws Exception
+     */
     public void setFrequence(String freq) throws Exception{
         try {
             if(freq.equals("AM") ){
@@ -44,6 +59,10 @@ public class radio implements IRadio {
 
     }
 
+    
+    /** 
+     * @return String
+     */
     public String getFrequence(){
         return frequence;
     }
@@ -80,34 +99,70 @@ public class radio implements IRadio {
         }
     }
 
+    
+    /** 
+     * @return double
+     */
     public double getFMActualStation(){
         return FMActualStation;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int getAMActualStation(){
         return AMActualStation;
     }
 
+    
+    /** 
+     * @param actualStation
+     */
     public void setFMActualStation(double actualStation){
         FMActualStation = actualStation;
     }
 
+    
+    /** 
+     * @param actualStation
+     */
     public void setAMActualStation(int actualStation){
         AMActualStation = actualStation;
     }
 
+    
+    /** 
+     * @param actualStation
+     * @param slot
+     */
     public void saveFMStation(double actualStation, int slot){
         FMSlot[slot] = actualStation;
     }
 
+    
+    /** 
+     * @param actualStation
+     * @param slot
+     */
     public void saveAMStation(int actualStation, int slot){
         AMSlot[slot] = actualStation;
     }
 
+    
+    /** 
+     * @param slot
+     * @return double
+     */
     public double getFMSlot(int slot){
         return FMSlot[slot];
     }
 
+    
+    /** 
+     * @param slot
+     * @return int
+     */
     public int getAMSlot(int slot){
         return AMSlot[slot];
     }

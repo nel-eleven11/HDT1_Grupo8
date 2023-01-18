@@ -1,8 +1,21 @@
 package src;
 
+/*
+ * HDT 1 Algorigmos y estructura de datos
+ * Nelson García Bravatti
+ * Joaquín Puente
+ * Oscar Fuentes
+ * Clase main
+ */
+
 import java.util.Scanner;
 
 public class Main{
+    
+    /** 
+     * @param args
+     * @throws Exception
+     */
     public static void main(String[] args) throws Exception {
         controlador radioUvg = new controlador();
         Scanner teclado = new Scanner(System.in);

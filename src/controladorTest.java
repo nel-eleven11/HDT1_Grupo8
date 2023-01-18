@@ -1,4 +1,11 @@
 package src;
+/*
+ * HDT 1 Algorigmos y estructura de datos
+ * Nelson García Bravatti
+ * Joaquín Puente
+ * Oscar Fuentes
+ * Clase controladorTest
+ */
 
 import org.junit.jupiter.api.Test;
 
@@ -29,6 +36,10 @@ class controladorTest {
         }
     }
 
+    
+    /** 
+     * @throws Exception
+     */
     @Test
     void forward() throws Exception {
         controlador controlador = new controlador();
@@ -45,6 +56,10 @@ class controladorTest {
 
     }
 
+    
+    /** 
+     * @throws Exception
+     */
     @Test
     void backward() throws Exception {
         controlador controlador = new controlador();
@@ -62,6 +77,10 @@ class controladorTest {
 
     }
 
+    
+    /** 
+     * @throws Exception
+     */
     @Test
     void saveStation() throws Exception {
         controlador controlador = new controlador();
@@ -83,6 +102,10 @@ class controladorTest {
         assertEquals(88.3, controlador.radio.getFMSlot(2));
     }
 
+    
+    /** 
+     * @throws Exception
+     */
     @Test
     void selectFavoriteSation() throws Exception {
         controlador controlador = new controlador();

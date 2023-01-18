@@ -1,4 +1,11 @@
 package src;
+/*
+ * HDT 1 Algorigmos y estructura de datos
+ * Nelson García Bravatti
+ * Joaquín Puente
+ * Oscar Fuentes
+ * Clase controlador
+ */
 
 public class controlador {
 
@@ -12,15 +19,31 @@ public class controlador {
         }
     }
 
+    
+    /** 
+     * @throws Exception
+     */
     public void changeFrequence() throws Exception {
         radio.setFrequence(radio.getFrequence());
     }
+    
+    /** 
+     * @return String
+     */
     public String getFrequence(){
         return radio.getFrequence();
     }
+    
+    /** 
+     * @return int
+     */
     public int getAMActualStation(){
         return radio.getAMActualStation();
     }
+    
+    /** 
+     * @return double
+     */
     public double getFMActualStation(){
         return radio.getFMActualStation();
     }
@@ -33,6 +56,10 @@ public class controlador {
         radio.Backward();
     }
 
+    
+    /** 
+     * @param slot
+     */
     public void saveStation(int slot){
         if(radio.getFrequence().equals("AM")){
             radio.saveAMStation(radio.getAMActualStation(), slot);
@@ -41,6 +68,10 @@ public class controlador {
         }
     }
 
+    
+    /** 
+     * @param slot
+     */
     public void selectFavoriteSation(int slot){
         if(radio.getFrequence().equals("AM")){
             radio.setAMActualStation(radio.getAMSlot(slot));
